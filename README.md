@@ -28,7 +28,7 @@ Latihan mencakup:
 ## Struktur Repositori
 
 ```
-latihan-array/
+PBO-Array-ArrayList/
 ├── Account.java
 ├── Customer.java
 ├── Bank.java
@@ -73,7 +73,7 @@ Tidak ada library eksternal. Program hanya memakai library bawaan Java:
 1. Clone repositori ini atau unduh sebagai ZIP, lalu ekstrak.
 
    ```bash
-   git clone https://github.com/username/nama-repo.git
+   git clone https://github.com/kamie-la/PBO-Array-ArrayList.git
    ```
 
 2. Buka folder proyek di VS Code: **File → Open Folder**, lalu pilih folder repositori.
@@ -81,7 +81,7 @@ Tidak ada library eksternal. Program hanya memakai library bawaan Java:
 4. Pastikan terminal berada di folder proyek. Jika belum, masuk dengan `cd`.
 
    ```bash
-   cd "path/ke/folder/proyek"
+   cd PBO-Array-ArrayList
    ```
 
 5. Compile semua file.
@@ -120,17 +120,6 @@ Program membuat `ArrayList<Account>`, lalu menjalankan operasi berikut:
 
 Setelah itu program menampilkan ukuran list (`size()`), elemen pertama, dan elemen terakhir.
 Hasilnya sesuai nilai *Expected* pada soal.
-
-**Contoh output:**
-
-```
-Size: 3
-Expected: 3
-First balance: 1008.0
-Expected: 1008.0
-Last balance: 1729.0
-Expected: 1729.0
-```
 
 ---
 
@@ -171,23 +160,7 @@ Menu `3` memanggil `withdraw(jumlah)`. Method ini hanya berhasil jika saldo menc
 Jika jumlah penarikan lebih besar dari saldo, saldo tidak berubah dan program menampilkan
 pesan "Tarik gagal, saldo tidak cukup."
 
-**Contoh alur:**
-
-```
-=== ATM SEDERHANA ===
-Jumlah nasabah: 2
-1. Baiq Nur
-2. Saqinah Kamila
-Pilih nasabah (nomor): 1
-
-Halo, Baiq!
-1. Cek saldo
-2. Setor tunai
-3. Tarik tunai
-0. Keluar
-Pilihan: 1
-Saldo kamu: Rp500000.0
-```
+Pada contoh di bawah, saldo saat itu Rp700000.0 (setelah setor 200000), sedangkan jumlah yang ditarik 900000. Karena 900000 lebih besar dari saldo, penarikan gagal dan menu ditampilkan kembali.
 
 ---
 
